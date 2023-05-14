@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('full path') {
       steps {
-        sh 'cat my-project/file.txt'
+        sh 'cat my-project/name.txt'
       }
     }
     stage('use dir') {
       steps {
         dir('my-project') {
-          sh 'cat file.txt'
+          sh 'cat name.txt'
         }
       }
     }
